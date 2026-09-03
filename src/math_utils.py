@@ -1,11 +1,8 @@
-"""
-Math utility functions
-"""
+---
+name: full-output-enforcement
+description: Overrides default LLM truncation behavior. Enforces complete code generation, bans placeholder patterns, and handles token-limit splits cleanly. Apply to any task requiring exhaustive, unabridged output.
+---
 
-def add(a, b):
-    """Add two numbers"""
-    return a + b
+# Full-Output Enforcement
 
-def multiply(a, b):
-    """Multiply two numbers"""
-    return a * b
+## Baseline
