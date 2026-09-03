@@ -13,3 +13,18 @@ def test_multiply():
     assert multiply(2, 3) == 6
     assert multiply(-1, 5) == -5
     assert multiply(0, 10) == 0
+
+def test_fibonacci():
+    from math_utils import fibonacci
+    assert fibonacci(0) == 0
+    assert fibonacci(1) == 1
+    assert fibonacci(5) == 5
+    assert fibonacci(10) == 55
+
+def test_fibonacci_negative():
+    from math_utils import fibonacci
+    try:
+        fibonacci(-1)
+        assert False, "Should have raised ValueError"
+    except ValueError as e:
+        assert str(e) == "n must be non-negative"
